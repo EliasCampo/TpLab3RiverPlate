@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous"> <!--libreria de boostrap--> 
+     <link rel="stylesheet" href="general.css"/>
+     <link rel="icon" type="image/x-icon" href="img/favicon.ico"> <!--favicon aparece escudo en pagina web-->
+     
+</head>
+
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">   <!--navbar con barra de navegacion-->
+    <div class="container-fluid">
+      <a class="navbar-brand">Club Atletico River Plate</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> <!--marginStart a la izquierda-->
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="asociar.html">Asociate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="noticias.html">Noticias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="fotos.html">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tienda.html">Tienda</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+
+  <div class="contactanos fondoContacto"> 
+    <h2 class="text-white text-center mt-5">Contactanos</h2>
+    <div class="row justify-content-center"> <!-- propiedad de boostrap formulario centrado-->
+        <div class="col-sm-12 col-md-8 col-lg-7 col-xl-5 py-4 bg-white" id="formulario">
+            <form>
+
+                <div class="mb-3"> <!--margin button 3-->
+                  <label for="nombre" class="form-label">Nombre y apellido</label>
+                  <input type="text" id="nombre" class="form-control" name="nombre" placeholder="Escribe tu nombre" autofocus> <!--autofocus para el curso ya aprezca en el cuadro de nombre-->
+                </div>        
+
+                <div class="mb-3">
+                  <label for="correo" class="form-label">Correo electronico</label>
+                  <input type="email" class="form-control" id="correo" name="correo" aria-describedby="emailHelp" placeholder="Escribe tu correo">
+                  <p id="emailHelp" class="form-text">Nunca compartiremos tu correo electronico con nadie.</p>
+                </div>
+                
+                <div class="mb-3"> 
+                  <p>¿Sos socio?</p>
+                  <input type="radio" id="si" name="soy_socio" value="si" checked>
+                  <label for="html">SI</label><br>
+                  <input type="radio" id="no" name="soy_socio" value="no">
+                  <label for="css">NO</label><br>
+                </div>  
+
+
+
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea> <!--atributo name para metodo GET-->
+                </div> 
+
+                  <p id="validacionContactoError" class="form-text mt-3 mb-3 text-danger"></p>
+                  <p id="validacionExitosa" class="form-text mt-3 mb-3 text-success"></p>
+
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success" type="button" id="botonExitosa" onclick="return validarDatosContacto()">Enviar</button>
+                  </div>
+            </form>
+
+        </div>
+
+    </div>
+
+  </div>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footerRow">
+        <div class="footerLinks">
+          <h4>Compañia</h4>
+          <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Nuestros servicios</a></li>
+            <li><a href="#">Asociate</a></li>
+          </ul>
+        </div>
+
+        <div class="footerLinks">
+          <h4>Ayuda</h4>
+          <ul>
+            <li><a href="#">Preguntas</a></li>
+            <li><a href="#">Compras</a></li>
+            <li><a href="#">Servicio</a></li>
+          </ul>
+        </div>
+
+        <div class="footerLinks">
+          <h4>Tienda</h4>
+          <ul>
+            <li><a href="#">Ropa</a></li>
+            <li><a href="#">Tienda River</a></li>
+            <li><a href="#">Dasdasd</a></li>
+          </ul>
+        </div>
+
+        <div class="footerLinks">
+          <h4>Siguenos</h4>
+          <div class="redes">
+            <a href="https://www.facebook.com/riverplateoficial/" target="_blanck"><i class="fa-brands fa-facebook fa-xs"></i></a>
+            <a href="https://www.instagram.com/riverplate/?hl=es" target="_blanck"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/RiverPlate" target="_blanck"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <p>
+      <div class="copyrigh2"> Club Atletico River Plate - Copyright&copy; 2023 - Todos los derechos reservados</div>
+    </p>
+    
+  </footer>
+
+</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script> <!--para que cuando achico la pagina se me vea la barra de herramienta, doc. de javascrip-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="./contacto.js" ></script>
+    <script src="https://kit.fontawesome.com/bf3490a25d.js" crossorigin="anonymous"></script> <!--ETIQUETA PARA REDES SOCIALES-->
+    
+</html>

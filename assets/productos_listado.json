@@ -1,0 +1,86 @@
+{
+    "productos": [
+        {
+            "name": "Camiseta Aniversario River Plate",
+            "price": "20000",
+            "image": "img/imgTienda/camiseta_river_negra.png",
+            "descripcion": "Hombre Futbol"
+            
+        },
+        {
+            "name": "Camiseta Titular River Plate",
+            "price": "20000",
+            "image": "img/imgTienda/camiseta.png",
+            "descripcion": "Talle Niño"
+        },
+        {
+            "name": "Camiseta Titular River Plate",
+            "price": "20000",
+            "image": "img/imgTienda/camiseta_oficial.png",
+            "descripcion": "Hombre Futbol"
+        
+        },
+        {
+            "name": "Musculosa Tiro River Plate",
+            "price": "20000",
+            "image": "img/imgTienda/camiseta_musculosa.png",
+            "descripcion": "Hombre Futbol"
+        
+        },
+        {
+            "name": "Camiseta Alternativa",
+            "price": "20000",
+            "image": "img/imgTienda/camiseta_alternativa.png",
+            "descripcion": "Mujer Futbol"
+        
+        },
+        {
+            "name": "Campera de Invierno River Plate",
+            "price": "20000",
+            "image": "img/imgTienda/camperon.png",
+            "descripcion": "Hombre Futbol"
+        
+        },
+        {
+            "name": "Remera River Plate 3 Tiras",
+            "price": "20000",
+            "image": "img/imgTienda/chomba.png",
+            "descripcion": "Hombre Futbol"
+        },
+        {
+            "name": "Medias Adi 21",
+            "price": "20000",
+            "image": "img/imgTienda/medias.png",
+            "descripcion": "Talle Unico-Agotado"
+        
+        },
+        {
+            "name": "Short Uniforme Titular River Plate 22/23",
+            "price": "20000",
+            "image": "img/imgTienda/short.png",
+            "descripcion": "Niño Futbol"
+        
+        }, 
+        {
+            "name": "Soporte Celular",
+            "price": "20000",
+            "image": "img/imgTienda/soporte_celular.png",
+            "descripcion": "Soporte Plastico"
+        }, 
+        {
+            "name": "Bolso Deportivo",
+            "price": "20000",
+            "image": "img/imgTienda/bolso_deportivo.png",
+            "descripcion": "Hombre Futbol"
+        }, 
+        {
+            "name": "Hinchada Piluso",
+            "price": "20000",
+            "image": "img/imgTienda/piluso.png",
+            "descripcion": "Unisex"
+        }
+        
+    ]
+    
+}
+

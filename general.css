@@ -1,0 +1,453 @@
+body{ /*este codigo de css lo saque de uiGradients PARA TODOS LOS FONDOS DE TODAS LAS PAGINAS*/
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-white{
+    background-color: #ffffff;
+}
+
+h1{
+    text-align: center;
+}
+
+main{
+    margin: 3%;
+}
+
+.banner-inicio{
+    width: 100%;
+    height: 100%;
+    transition: filter 0.3s ease;
+}
+
+ /*Foto de fondo estilo navbar*/ 
+.banner-inicio:hover {
+    /*box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);*/ /* Cambia la sombra al hacer hover */
+    filter: saturate(70%); /* Cambia la saturación al hacer hover */
+}
+
+/*************************TODAS LAS FOTOS DE GALERIA fotos.html*******************************************/
+.imagen-galeria{ 
+    width: 50%;
+    transition: transform 0.3s ease;
+}
+
+.imagen-galeria:hover {
+    transform: scale(1.1);
+}
+
+div.desc{    /* LOS NOMBRES DE LOS JUGADORES fotos.html*/
+    padding: 18px;
+    text-align: center;
+    color:white;
+    font-size: 20px;
+}
+
+.tituloGaleria{ /*titulo de apartado fotos.html*/
+    color: red;
+}
+
+.letrasTitulo{
+    color:white;
+    font-size: 120%;
+    padding-left: 30px;     /* margin: fuera padding: dentro*/
+    padding-top: 20px;
+}
+
+.tituloGaleria:hover{
+    color:white;
+}
+
+.letrasTitulo:hover{
+    color:red;
+}
+
+.carousel-item img { /*navbar de fotos galeria- fotos.html*/
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+/**********************MODALES DE GALERIA********************************/
+
+.hola-modal{
+    z-index:3; /*para que la imagen quede superpuesta a la pagina principal por tener mayor z index*/
+    display:none; /*la pagina se sigue desplazando como si no estuviera este modal*/
+    padding-top:100px;
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    overflow:auto;
+    background-color:rgba(25, 9, 9, 0.4); /*Fondo de la imagen superpuesta*/
+}
+
+.hola-modal-content{  /*el contenedor de la foto*/
+    margin:auto;
+    background-color:#e3dada;
+    position:relative;
+    padding: 40px;
+    outline:0; 
+    width: 30%;
+    border-radius: 20px;
+    animation: fade-in 0.5s ease; 
+}
+
+.hola-container img{
+    width: 50%;
+    cursor:pointer;
+    transition: transform 0.3s ease;
+
+}
+
+.hola-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Animación de palabras deslizantes */
+.sliding-words {
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative; 
+    height: 100px; /* altura para el texto deslizante */
+  }
+  
+.sliding-words span {
+    display: inline-block; /*permite establecer un ancho y alto en el elemento*/
+    transform: translateX(-100%);
+    animation: slide 5s forwards;
+    padding: 0 10px;
+    font-size: 50px;
+    position: absolute; 
+    top: 0; /* Alinea el texto a la parte superior */
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-in {
+    to {
+        opacity: 1;
+    }
+}
+
+.fotito{
+    width: 100%;
+}
+/**************************************************************************/
+
+
+.fondoContacto{
+    background-image:url(img/contactoFotos/monumental.png) ;
+    background-repeat: no-repeat;
+    background-size: cover; /*se ajusta al maximo tamaño del fondo*/
+    max-width: 100%;  
+
+}
+
+
+.redes{
+    font-size: 200%;
+    margin:0 5%;
+    padding: 1%;
+}
+
+.fa-facebook:hover{
+    color:rgb(57, 57, 169);
+    font-size: 41px;
+}
+.fa-instagram:hover{
+    color:rgb(185, 19, 185);
+    font-size: 43px;
+}
+.fa-twitter:hover{
+    color:rgb(2, 2, 63);
+    font-size: 42px;
+}
+
+.fotosDerecha{
+    width: 75%;
+}
+
+.parrafos{
+    color:white;
+    font-size: 160%;
+}
+
+.parrafoGallardo{
+    color: #ffffff;
+    font-size: 160%;
+}
+
+.fotosIzquierda{
+    float: left;
+    width: 90%;
+}
+
+.listaVertical{
+    border-style: solid;
+    float: left;
+    background-color:#353c3f;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+ol{
+    color:rgb(237, 231, 231);
+}
+
+.mapa{
+    color: #991414;
+
+}
+
+
+.listaVertical h2{
+    color:red;
+}
+
+/**********FOTOS NOTICIAS***************/
+.imagenesNoticias{
+    width: 60%;
+}
+
+.noticiaContenedor {
+    position: relative;
+  }
+
+.noticiaContenedor .efectoFondo {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(47, 44, 44, 0.5);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+
+.texto-noticias{
+    color: white;
+    font-size: 16px;
+}
+
+.noticiaContenedor:hover {
+    transform:scale(1.1);
+}
+
+.noticiaContenedor:hover .efectoFondo { /*con esta porcion de codigo logro el efecto de que se muestre el texto cuando paso el mouse*/
+    opacity: 1;
+}
+
+.imagenNoticiaGallardo{
+    width: 30%;
+}
+
+
+.fotoAsociar{
+    min-width: 100%; 
+    width: 100%; 
+    height: 100%;
+}
+
+/******************POPUP**********************/
+
+.overlay {
+    position: fixed; /*posicionamiento fijo*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    z-index: 9999;
+}
+
+.popup {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+
+}
+
+
+
+/****************************FOOTER************************************************/
+
+.container{
+    height: 80%;
+
+}
+
+.footer{
+    background-color: #27292b;
+    padding: 4%;
+}
+
+.footerRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footerLinks{
+    width: 25%;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.footerLinks h4{
+    font-size: 20px;
+    color:#fff;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid #00c3ff;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footerLinks ul li a{
+     font-size: 18px;
+     text-decoration: none;
+     color:#bbbbbb;
+     display: block;
+     margin-bottom: 15px;
+     transition: all .3s ease;
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     list-style: none;
+}
+
+.footerLinks ul li a:hover{
+    color:#ffffff;
+    padding: 6px;
+}
+
+.footerLinks li {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+.redes a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+@media (max-width: 768px) {
+    /* Estilos para pantallas más pequeñas */
+    .footerLinks {
+      width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para pantallas aún más pequeñas */
+    .footerLinks {
+      width: 100%;
+      padding: 0;
+    }
+}
+
+.copyrigh2{
+    font-size: 100%;
+    text-align: center;
+    margin-bottom: -4%;
+}
+
+.contactanos{
+    padding: 10%;
+}
+
+#formulario{
+    border-radius: 20px;
+}
+
+.asociate{
+    margin-top: 3%;
+}
+
+
+#fotoAsociate{
+    width: 100%;
+}
+
+
+.texto-asociate{
+    color: #ffffff;
+    text-align: center;
+}
+/*********************FORMULARIO ASOCIATE***************/
+.form-label{
+    display: block;
+    font-weight: 700;
+    padding: 5px;
+    cursor: pointer;
+}
+/*********************PRODUCTOS**********************/
+
+.productos{
+    padding: 20px;
+    box-shadow: 0 5px 5px rgba(221, 214, 214, 0.2);
+    text-align: center;
+    color:white;
+}
+
+.productos img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productos .name{
+    font-size: 20px;
+    color:#991414
+}
+
+.productos .price{
+    font-weight: 600;
+    font-size: 28px;
+    color:#3498db;
+    padding-top: 30px;
+    font-family: sans-serif;
+    
+}
+
+.productos .descripcion{
+    font-size: 50px;
+}
+
+.productos img:hover{
+    transform:scale(1.1);
+    cursor:pointer;
+}
