@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function(event){
             document.getElementById("nombre").style.borderColor="red";
         }else{
             document.getElementById("nombre").style.borderColor="";
-
         }
     };
 
@@ -40,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function(event){
             document.getElementById("correo").style.borderColor="";
         }
     };
-    
 });
 
 
@@ -126,7 +124,6 @@ function validarDatos(){
             document.getElementById("validacionError").innerHTML = "";
             document.getElementById("correo").style.borderColor="";
         }
-                    
     }      
     
     if(datosValidos)

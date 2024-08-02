@@ -3,10 +3,10 @@ const setProductos = (listado) => {
     productos = listado;
 }
 
-fetch("assets/productos_listado.json")
-    .then(response => response.json())
-    .then((json) => setProductos(json["productos"]))
-    .then(() => cargarProductos())
+fetch("assets/productos_listado.json") /**con metodo get como defecto estamos haciendo una peticion del json mio y devuelve una promesa*/
+    .then(response => response.json()) /**esta es la respuesta del fetch y lo transformamos en un json*/
+    .then((json) => setProductos(json["productos"])) /* se llama a la funcion setProductos para asignar los datos del JSON al objeto productos */
+    .then(() => cargarProductos()) /* esta funcion se encarga de cargar los productos al html */
 
 const cargarProductos = () => {    
     div = document.getElementById('listadoProductos');
@@ -27,5 +27,5 @@ const cargarProductos = () => {
                                             
 
                                         </div>`;
-    });
+    }); 
 }
